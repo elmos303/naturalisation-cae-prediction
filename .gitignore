@@ -1,0 +1,109 @@
+# ============================================================================
+# PYTHON
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# IDE & EDITORS
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings
+*.sublime-*
+.vim
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+# Outputs (generated)
+output/artifacts/*.png
+output/predictions/*.txt
+output/models/*.pkl
+data/processed/*
+logs/
+*.log
+
+# Keep directories
+!data/processed/.gitkeep
+!output/artifacts/.gitkeep
+!output/predictions/.gitkeep
+!output/models/.gitkeep
+
+# ============================================================================
+# JUPYTER & NOTEBOOKS
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# ============================================================================
+# TESTING
+# ============================================================================
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.#*
+
+# ============================================================================
+# OS SPECIFIC
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================================================
+# ENVIRONMENT
+# ============================================================================
+.env
+.env.local
+.env.*.local
+

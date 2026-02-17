@@ -1,0 +1,10 @@
+{
+    "model": "piecewise_linear",
+    "data_path": "data/raw/data.csv",
+    "output_filename": "forecast.png",
+    "target_date": "14/08/2025",
+    "confidence_level": 0.95,
+    "breakpoint_min_samples": 8,
+    "polynomial_degree": 3,
+    "random_state": 42
+}
