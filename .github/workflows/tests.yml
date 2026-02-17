@@ -12,15 +12,18 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        python-version: ['3.8', '3.9', '3.10', '3.11']
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
+    
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
     
     - name: Install dependencies
       run: |
@@ -28,5 +31,9 @@ jobs:
         pip install -r requirements.txt
     
     - name: Run main script
+      run: python src/main.py
+      
+    - name: Verify output files
       run: |
-        python src/main.py
+        ls -la output/predictions/ || ls output\predictions\ 
+        ls -la output/artifacts/ || ls output\artifacts\
